@@ -121,3 +121,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_DIR = os.path.join(BASE_DIR, "static")
+
+#Django에서 정적파일을 검색하고 가져올 폴더 목
+STATICFILES_DIRS = [
+    STATIC_DIR,
+]
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+MEDIA_URL = '/media/'
